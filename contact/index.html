@@ -1,1 +1,67 @@
-
+<!DOCTYPE html>
+<html lang="en" class="plain-header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Sable & Vance LLP for a consultation." />
+    <title>Contact | Sable & Vance LLP</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header" data-header>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="../" aria-label="Sable and Vance LLP home"><span class="brand-mark" aria-hidden="true">SV</span><span class="brand-text"><strong>Sable & Vance LLP</strong><small>Counselors and Advocates</small></span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle><span class="sr-only">Menu</span><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+        <div class="nav-menu" id="nav-menu" data-nav-menu><a href="../practice-areas/">Practice Areas</a><a href="../attorneys/">Attorneys</a><a href="../about/">About</a><a href="../contact/">Contact</a></div>
+        <a class="nav-action" href="../contact/">Request Consultation</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="section-label">Contact</p>
+          <h1>Request a confidential consultation.</h1>
+          <p>Replace the sample contact details and connect this form to a secure intake platform before launch.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container contact-grid">
+          <div>
+            <h2>Office information</h2>
+            <ul class="contact-details">
+              <li><strong>Phone:</strong> (555) 014-2670</li>
+              <li><strong>Email:</strong> intake@sablevance.example</li>
+              <li><strong>Office:</strong> 400 Meridian Avenue, Suite 1800</li>
+              <li><strong>Hours:</strong> Monday to Friday, 9:00 AM to 5:30 PM</li>
+            </ul>
+          </div>
+          <form class="contact-form" aria-label="Consultation request form">
+            <label for="name">Full name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <label for="email">Email address <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            <label for="matter">Matter type <span aria-hidden="true">*</span></label>
+            <select id="matter" name="matter" required>
+              <option value="">Select a practice area</option>
+              <option>Business & Corporate</option>
+              <option>Commercial Litigation</option>
+              <option>Estate Planning</option>
+              <option>Real Estate</option>
+              <option>Employment Counsel</option>
+              <option>Family & Private Matters</option>
+            </select>
+            <label for="message">Brief description <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required></textarea>
+            <p class="form-note">Fields marked with an asterisk are required. Do not submit confidential information until an attorney-client relationship is confirmed.</p>
+            <button class="button button-primary full-width" type="submit">Submit Consultation Request</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-bottom"><p>&copy; <span data-year></span> Sable & Vance LLP. Attorney Advertising. Prior results do not guarantee a similar outcome.</p></div></footer>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
