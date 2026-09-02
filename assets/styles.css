@@ -720,28 +720,4 @@ cite {
     animation-iteration-count: 1 !important;
   }
 }
-  /* Force the menu container to reveal when header has .menu-active */
-.site-header.menu-active nav,
-.site-header.menu-active .nav-menu,
-.site-header.menu-active .main-navigation,
-.site-header.menu-active .mobile-nav,
-.site-header.menu-active .site-nav {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  pointer-events: auto !important;
-  transform: none !important;
-  clip-path: none !important;
-  max-height: 100vh !important;
-  position: absolute !important;
-  top: 100% !important;
-  left: 0 !important;
-  width: 100% !important;
-  background-color: #ffffff !important;
-  z-index: 99999 !important;
-}
-
-/* Ensure the header container doesn't hide overflowing dropdown content */
-.site-header {
-  overflow: visible !important;
-}
+ 
