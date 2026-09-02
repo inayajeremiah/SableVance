@@ -720,4 +720,19 @@ cite {
     animation-iteration-count: 1 !important;
   }
 }
- 
+ /* Fix mobile menu opening state */
+.site-header.menu-active .site-nav,
+.site-header.menu-active .main-nav,
+.site-header.menu-active .nav-menu,
+.site-header.menu-active nav {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  max-height: 100vh !important;
+  z-index: 9999 !important;
+}
+
+.site-header {
+  overflow: visible !important;
+}
