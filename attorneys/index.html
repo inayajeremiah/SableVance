@@ -8,6 +8,67 @@
     Attorneys | Sable & Vance LLP
     </title>
     <link rel="stylesheet" href="../assets/styles.css">
+
+    <style>
+      /* Compact attorney directory */
+      .attorney-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        align-items: start;
+      }
+
+      .attorney-card {
+        overflow: hidden;
+        min-width: 0;
+      }
+
+      .attorney-card > div:last-child {
+        padding: 1rem;
+      }
+
+      .attorney-initials {
+        width: 68px;
+        height: 68px;
+        margin: 1rem auto 0;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: #142a46;
+        color: #ffffff;
+        font-size: 1.15rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        line-height: 1;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .attorney-card .role {
+        margin-bottom: 0.35rem;
+      }
+
+      .attorney-card h2 {
+        margin-top: 0;
+        margin-bottom: 0.55rem;
+        font-size: 1.2rem;
+        line-height: 1.2;
+      }
+
+      .attorney-card p:last-child {
+        margin-bottom: 0;
+        line-height: 1.55;
+      }
+
+      @media (max-width: 640px) {
+        .attorney-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .attorney-initials {
+          margin-top: 0.85rem;
+        }
+      }
+    </style>
+
   </head>
   <body>
     <a class="skip-link" href="#main">
@@ -76,7 +137,7 @@
         <div class="container attorney-grid">
           <!-- 1. Elara Voss Meridian -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80" alt="Elara Voss Meridian, Human Rights Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">EVM</div>
             <div>
               <p class="role">
               Human Rights Law
@@ -91,7 +152,7 @@
           </article>
           <!-- 2. Calder Renwick Solane -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Calder Renwick Solane, Corporate Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">CRS</div>
             <div>
               <p class="role">
               Corporate Law
@@ -106,7 +167,7 @@
           </article>
           <!-- 3. Mira Celestine Arvello -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" alt="Mira Celestine Arvello, ADA Title III Accessibility Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">MCA</div>
             <div>
               <p class="role">
               ADA Title III Accessibility Law
@@ -121,7 +182,7 @@
           </article>
           <!-- 4. Jonas Everly Caxton -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Jonas Everly Caxton, Criminal Defense Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">JEC</div>
             <div>
               <p class="role">
               Criminal Defense Law
@@ -136,7 +197,7 @@
           </article>
           <!-- 5. Seraphina Vale Corwyn -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80" alt="Seraphina Vale Corwyn, Employment Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">SVC</div>
             <div>
               <p class="role">
               Employment Law
@@ -151,7 +212,7 @@
           </article>
           <!-- 6. Darian Lucent Marrow -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Darian Lucent Marrow, Intellectual Property Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">DLM</div>
             <div>
               <p class="role">
               Intellectual Property Law
@@ -166,7 +227,7 @@
           </article>
           <!-- 7. Nalia Verenne Solstice -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?auto=format&fit=crop&w=900&q=80" alt="Nalia Verenne Solstice, Immigration Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">NVS</div>
             <div>
               <p class="role">
               Immigration Law
@@ -181,7 +242,7 @@
           </article>
           <!-- 8. Riven Ashford Calderis -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=900&q=80" alt="Riven Ashford Calderis, Environmental Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">RAC</div>
             <div>
               <p class="role">
               Environmental Law
@@ -196,7 +257,7 @@
           </article>
           <!-- 9. Amara Quinley Theroux -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Amara Quinley Theroux, Family Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">AQT</div>
             <div>
               <p class="role">
               Family Law
@@ -211,7 +272,7 @@
           </article>
           <!-- 10. Lucian Verroth Ellison -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80" alt="Lucian Verroth Ellison, Real Estate Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">LVE</div>
             <div>
               <p class="role">
               Real Estate Law
@@ -226,7 +287,7 @@
           </article>
           <!-- 11. Isolde Maren Veyra -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" alt="Isolde Maren Veyra, Healthcare Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">IMV</div>
             <div>
               <p class="role">
               Healthcare Law
@@ -241,7 +302,7 @@
           </article>
           <!-- 12. Cassian Rourke Valen -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Cassian Rourke Valen, Bankruptcy and Financial Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">CRV</div>
             <div>
               <p class="role">
               Bankruptcy and Financial Law
@@ -256,7 +317,7 @@
           </article>
           <!-- 13. Valeria Noelle Crestwyn -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80" alt="Valeria Noelle Crestwyn, Civil Rights Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">VNC</div>
             <div>
               <p class="role">
               Civil Rights Law
@@ -271,7 +332,7 @@
           </article>
           <!-- 14. Orion Cassiel Wrenford -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80" alt="Orion Cassiel Wrenford, Securities and Investment Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">OCW</div>
             <div>
               <p class="role">
               Securities and Investment Law
@@ -286,7 +347,7 @@
           </article>
           <!-- 15. Liora Maeven Thornvale -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" alt="Liora Maeven Thornvale, Personal Injury Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">LMT</div>
             <div>
               <p class="role">
               Personal Injury Law
@@ -301,7 +362,7 @@
           </article>
           <!-- 16. Evander Rhys Calderon -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Evander Rhys Calderon, Data Privacy and Cybersecurity Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">ERC</div>
             <div>
               <p class="role">
               Data Privacy and Cybersecurity Law
@@ -316,7 +377,7 @@
           </article>
           <!-- 17. Celeste Amarin Veylor -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Celeste Amarin Veylor, Elder Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">CAV</div>
             <div>
               <p class="role">
               Elder Law
@@ -331,7 +392,7 @@
           </article>
           <!-- 18. Marcus Ellian Vossmere -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80" alt="Marcus Ellian Vossmere, Tax Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">MEV</div>
             <div>
               <p class="role">
               Tax Law
@@ -346,7 +407,7 @@
           </article>
           <!-- 19. Anastelle Rowan Mireaux -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80" alt="Anastelle Rowan Mireaux, Disability Rights Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">ARM</div>
             <div>
               <p class="role">
               Disability Rights Law
@@ -361,7 +422,7 @@
           </article>
           <!-- 20. Julian Theron Valcrest -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Julian Theron Valcrest, Construction Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">JTV</div>
             <div>
               <p class="role">
               Construction Law
@@ -376,7 +437,7 @@
           </article>
           <!-- 21. Sienna Marlowe Quentaris -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" alt="Sienna Marlowe Quentaris, Entertainment and Media Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">SMQ</div>
             <div>
               <p class="role">
               Entertainment and Media Law
@@ -391,7 +452,7 @@
           </article>
           <!-- 22. Adrian Solen Marquette -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Adrian Solen Marquette, International Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">ASM</div>
             <div>
               <p class="role">
               International Law
@@ -406,7 +467,7 @@
           </article>
           <!-- 23. Rhea Valentina Corvelle -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Rhea Valentina Corvelle, Consumer Protection Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">RVC</div>
             <div>
               <p class="role">
               Consumer Protection Law
@@ -421,7 +482,7 @@
           </article>
           <!-- 24. Damon Kyran Velorian -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80" alt="Damon Kyran Velorian, Administrative and Regulatory Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">DKV</div>
             <div>
               <p class="role">
               Administrative and Regulatory Law
@@ -436,7 +497,7 @@
           </article>
           <!-- 25. Marceline Aria Velthorne -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80" alt="Marceline Aria Velthorne, Medical Malpractice Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">MAV</div>
             <div>
               <p class="role">
               Medical Malpractice Law
@@ -451,7 +512,7 @@
           </article>
           <!-- 26. Theron Lucius Veymark -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Theron Lucius Veymark, Aviation Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">TLV</div>
             <div>
               <p class="role">
               Aviation Law
@@ -466,7 +527,7 @@
           </article>
           <!-- 27. Vivienne Solara Renwick -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" alt="Vivienne Solara Renwick, Antitrust and Competition Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">VSR</div>
             <div>
               <p class="role">
               Antitrust and Competition Law
@@ -481,7 +542,7 @@
           </article>
           <!-- 28. Alistair Corvin Maelthorne -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80" alt="Alistair Corvin Maelthorne, Maritime and Admiralty Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">ACM</div>
             <div>
               <p class="role">
               Maritime and Admiralty Law
@@ -496,7 +557,7 @@
           </article>
           <!-- 29. Celine Maris Valora -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Celine Maris Valora, Veterans Rights Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">CMV</div>
             <div>
               <p class="role">
               Veterans’ Rights Law
@@ -511,7 +572,7 @@
           </article>
           <!-- 30. Rowan Elise Corvayne -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80" alt="Rowan Elise Corvayne, Bankruptcy Litigation attorney" />
+            <div class="attorney-initials" aria-hidden="true">REC</div>
             <div>
               <p class="role">
               Bankruptcy Litigation
@@ -526,7 +587,7 @@
           </article>
           <!-- 31. Isadora Lenora Veycrest -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" alt="Isadora Lenora Veycrest, Education Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">ILV</div>
             <div>
               <p class="role">
               Education Law
@@ -541,7 +602,7 @@
           </article>
           <!-- 32. Dorian Cassiel Evermont -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Dorian Cassiel Evermont, Insurance Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">DCE</div>
             <div>
               <p class="role">
               Insurance Law
@@ -556,7 +617,7 @@
           </article>
           <!-- 33. Naomi Celeste Arvantis -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Naomi Celeste Arvantis, Privacy and Technology Rights Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">NCA</div>
             <div>
               <p class="role">
               Privacy and Technology Rights Law
@@ -571,7 +632,7 @@
           </article>
           <!-- 34. Elias Rowan Montclair -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80" alt="Elias Rowan Montclair, Complex Litigation attorney" />
+            <div class="attorney-initials" aria-hidden="true">ERM</div>
             <div>
               <p class="role">
               Complex Litigation
@@ -586,7 +647,7 @@
           </article>
           <!-- 35. Marina Elowen Crestara -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80" alt="Marina Elowen Crestara, Public Interest Law attorney" />
+            <div class="attorney-initials" aria-hidden="true">MEC</div>
             <div>
               <p class="role">
               Public Interest Law
@@ -601,7 +662,7 @@
           </article>
           <!-- 36. Gabriel Thorne Valecourt -->
           <article class="attorney-card">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Gabriel Thorne Valecourt, Civil Litigation and Dispute Resolution attorney" />
+            <div class="attorney-initials" aria-hidden="true">GTV</div>
             <div>
               <p class="role">
               Civil Litigation and Dispute Resolution
