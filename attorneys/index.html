@@ -59,6 +59,44 @@
         line-height: 1.55;
       }
 
+
+      .attorney-photo {
+        width: 112px;
+        height: 112px;
+        margin: 1rem auto 0;
+        overflow: hidden;
+        border-radius: 50%;
+        background: #e8edf2;
+      }
+
+      .attorney-photo img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .attorney-card .role {
+        font-weight: 700;
+      }
+
+      .attorney-card .practice-area {
+        display: block;
+        margin-top: 0.2rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+        opacity: 0.82;
+      }
+
+      .partner-card {
+        border-top: 3px solid #142a46;
+      }
+
+      .partner-card .attorney-photo {
+        width: 128px;
+        height: 128px;
+      }
+
       @media (max-width: 640px) {
         .attorney-grid {
           grid-template-columns: 1fr;
@@ -66,6 +104,15 @@
 
         .attorney-initials {
           margin-top: 0.85rem;
+        }
+
+        .attorney-photo {
+          margin-top: 0.85rem;
+        }
+
+        .partner-card .attorney-photo {
+          width: 112px;
+          height: 112px;
         }
       }
     </style>
@@ -137,12 +184,10 @@
       <section class="section muted-section">
         <div class="container attorney-grid">
           <!-- 1. Elara Voss Meridian -->
-          <article class="attorney-card">
-            <div class="attorney-initials" aria-hidden="true">EVM</div>
+          <article class="attorney-card partner-card">
+            <div class="attorney-photo"><img src="../assets/attorneys/elara-voss-meridian.jpg" alt="Elara Voss Meridian" loading="lazy"></div>
             <div>
-              <p class="role">
-              Human Rights Law
-              </p>
+              <p class="role">Managing Partner<span class="practice-area">Human Rights Law</span></p>
               <h2>
               Elara Voss Meridian
               </h2>
@@ -151,13 +196,37 @@
               </p>
             </div>
           </article>
-          <!-- 2. Calder Renwick Solane -->
-          <article class="attorney-card">
-            <div class="attorney-initials" aria-hidden="true">CRS</div>
+          <!-- 2. Jonas Everly Caxton -->
+          <article class="attorney-card partner-card">
+            <div class="attorney-photo"><img src="../assets/attorneys/jonas-everly-caxton.jpg" alt="Jonas Everly Caxton" loading="lazy"></div>
             <div>
-              <p class="role">
-              Corporate Law
+              <p class="role">Senior Partner<span class="practice-area">Criminal Defense Law</span></p>
+              <h2>
+              Jonas Everly Caxton
+              </h2>
+              <p>
+              Jonas Everly Caxton is a criminal defense attorney providing representation for individuals involved in complex criminal matters and legal proceedings. His practice focuses on protecting constitutional rights, ensuring fair treatment, and developing strong defense strategies through careful review of evidence and legal procedures. Jonas handles matters requiring detailed investigation, courtroom preparation, negotiation, hearings, and litigation while maintaining a strong commitment to due process.
               </p>
+            </div>
+          </article>
+          <!-- 3. Gabriel Thorne Valecourt -->
+          <article class="attorney-card partner-card">
+            <div class="attorney-photo"><img src="../assets/attorneys/gabriel-thorne-valecourt.jpg" alt="Gabriel Thorne Valecourt" loading="lazy"></div>
+            <div>
+              <p class="role">Senior Partner<span class="practice-area">Civil Litigation and Dispute Resolution</span></p>
+              <h2>
+              Gabriel Thorne Valecourt
+              </h2>
+              <p>
+              Gabriel Thorne Valecourt specializes in resolving complex disputes involving individuals, organizations, and businesses. His practice focuses on negotiations, mediation, arbitration, and courtroom proceedings. Gabriel evaluates matters thoroughly to identify risks, opportunities, and practical solutions while providing strategic guidance and effective advocacy throughout the legal process.
+              </p>
+            </div>
+          </article>
+          <!-- 4. Calder Renwick Solane -->
+          <article class="attorney-card partner-card">
+            <div class="attorney-photo"><img src="../assets/attorneys/calder-renwick-solane.jpg" alt="Calder Renwick Solane" loading="lazy"></div>
+            <div>
+              <p class="role">Senior Partner<span class="practice-area">Corporate Law</span></p>
               <h2>
               Calder Renwick Solane
               </h2>
@@ -166,7 +235,7 @@
               </p>
             </div>
           </article>
-          <!-- 3. Mira Celestine Arvello -->
+          <!-- 5. Mira Celestine Arvello -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">MCA</div>
             <div>
@@ -181,22 +250,7 @@
               </p>
             </div>
           </article>
-          <!-- 4. Jonas Everly Caxton -->
-          <article class="attorney-card">
-            <div class="attorney-initials" aria-hidden="true">JEC</div>
-            <div>
-              <p class="role">
-              Criminal Defense Law
-              </p>
-              <h2>
-              Jonas Everly Caxton
-              </h2>
-              <p>
-              Jonas Everly Caxton is a criminal defense attorney providing representation for individuals involved in complex criminal matters and legal proceedings. His practice focuses on protecting constitutional rights, ensuring fair treatment, and developing strong defense strategies through careful review of evidence and legal procedures. Jonas handles matters requiring detailed investigation, courtroom preparation, negotiation, hearings, and litigation while maintaining a strong commitment to due process.
-              </p>
-            </div>
-          </article>
-          <!-- 5. Seraphina Vale Corwyn -->
+          <!-- 6. Seraphina Vale Corwyn -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">SVC</div>
             <div>
@@ -211,7 +265,7 @@
               </p>
             </div>
           </article>
-          <!-- 6. Darian Lucent Marrow -->
+          <!-- 7. Darian Lucent Marrow -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">DLM</div>
             <div>
@@ -226,7 +280,7 @@
               </p>
             </div>
           </article>
-          <!-- 7. Nalia Verenne Solstice -->
+          <!-- 8. Nalia Verenne Solstice -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">NVS</div>
             <div>
@@ -241,7 +295,7 @@
               </p>
             </div>
           </article>
-          <!-- 8. Riven Ashford Calderis -->
+          <!-- 9. Riven Ashford Calderis -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">RAC</div>
             <div>
@@ -256,7 +310,7 @@
               </p>
             </div>
           </article>
-          <!-- 9. Amara Quinley Theroux -->
+          <!-- 10. Amara Quinley Theroux -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">AQT</div>
             <div>
@@ -271,7 +325,7 @@
               </p>
             </div>
           </article>
-          <!-- 10. Lucian Verroth Ellison -->
+          <!-- 11. Lucian Verroth Ellison -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">LVE</div>
             <div>
@@ -286,7 +340,7 @@
               </p>
             </div>
           </article>
-          <!-- 11. Isolde Maren Veyra -->
+          <!-- 12. Isolde Maren Veyra -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">IMV</div>
             <div>
@@ -301,7 +355,7 @@
               </p>
             </div>
           </article>
-          <!-- 12. Cassian Rourke Valen -->
+          <!-- 13. Cassian Rourke Valen -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">CRV</div>
             <div>
@@ -316,7 +370,7 @@
               </p>
             </div>
           </article>
-          <!-- 13. Kimberly Ann Phelan -->
+          <!-- 14. Kimberly Ann Phelan -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">KAP</div>
             <div>
@@ -331,7 +385,7 @@
               </p>
             </div>
           </article>
-          <!-- 14. Orion Cassiel Wrenford -->
+          <!-- 15. Orion Cassiel Wrenford -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">OCW</div>
             <div>
@@ -346,7 +400,7 @@
               </p>
             </div>
           </article>
-          <!-- 15. Liora Maeven Thornvale -->
+          <!-- 16. Liora Maeven Thornvale -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">LMT</div>
             <div>
@@ -361,7 +415,7 @@
               </p>
             </div>
           </article>
-          <!-- 16. Evander Rhys Calderon -->
+          <!-- 17. Evander Rhys Calderon -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">ERC</div>
             <div>
@@ -376,7 +430,7 @@
               </p>
             </div>
           </article>
-          <!-- 17. Celeste Amarin Veylor -->
+          <!-- 18. Celeste Amarin Veylor -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">CAV</div>
             <div>
@@ -391,7 +445,7 @@
               </p>
             </div>
           </article>
-          <!-- 18. Marcus Ellian Vossmere -->
+          <!-- 19. Marcus Ellian Vossmere -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">MEV</div>
             <div>
@@ -406,7 +460,7 @@
               </p>
             </div>
           </article>
-          <!-- 19. Anastelle Rowan Mireaux -->
+          <!-- 20. Anastelle Rowan Mireaux -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">ARM</div>
             <div>
@@ -421,7 +475,7 @@
               </p>
             </div>
           </article>
-          <!-- 20. Julian Theron Valcrest -->
+          <!-- 21. Julian Theron Valcrest -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">JTV</div>
             <div>
@@ -436,7 +490,7 @@
               </p>
             </div>
           </article>
-          <!-- 21. Sienna Marlowe Quentaris -->
+          <!-- 22. Sienna Marlowe Quentaris -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">SMQ</div>
             <div>
@@ -451,7 +505,7 @@
               </p>
             </div>
           </article>
-          <!-- 22. Adrian Solen Marquette -->
+          <!-- 23. Adrian Solen Marquette -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">ASM</div>
             <div>
@@ -466,7 +520,7 @@
               </p>
             </div>
           </article>
-          <!-- 23. Rhea Valentina Corvelle -->
+          <!-- 24. Rhea Valentina Corvelle -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">RVC</div>
             <div>
@@ -481,7 +535,7 @@
               </p>
             </div>
           </article>
-          <!-- 24. Damon Kyran Velorian -->
+          <!-- 25. Damon Kyran Velorian -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">DKV</div>
             <div>
@@ -496,7 +550,7 @@
               </p>
             </div>
           </article>
-          <!-- 25. Marceline Aria Velthorne -->
+          <!-- 26. Marceline Aria Velthorne -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">MAV</div>
             <div>
@@ -511,7 +565,7 @@
               </p>
             </div>
           </article>
-          <!-- 26. Theron Lucius Veymark -->
+          <!-- 27. Theron Lucius Veymark -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">TLV</div>
             <div>
@@ -526,7 +580,7 @@
               </p>
             </div>
           </article>
-          <!-- 27. Vivienne Solara Renwick -->
+          <!-- 28. Vivienne Solara Renwick -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">VSR</div>
             <div>
@@ -541,7 +595,7 @@
               </p>
             </div>
           </article>
-          <!-- 28. Alistair Corvin Maelthorne -->
+          <!-- 29. Alistair Corvin Maelthorne -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">ACM</div>
             <div>
@@ -556,7 +610,7 @@
               </p>
             </div>
           </article>
-          <!-- 29. Celine Maris Valora -->
+          <!-- 30. Celine Maris Valora -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">CMV</div>
             <div>
@@ -571,7 +625,7 @@
               </p>
             </div>
           </article>
-          <!-- 30. Rowan Elise Corvayne -->
+          <!-- 31. Rowan Elise Corvayne -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">REC</div>
             <div>
@@ -586,7 +640,7 @@
               </p>
             </div>
           </article>
-          <!-- 31. Isadora Lenora Veycrest -->
+          <!-- 32. Isadora Lenora Veycrest -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">ILV</div>
             <div>
@@ -601,7 +655,7 @@
               </p>
             </div>
           </article>
-          <!-- 32. Dorian Cassiel Evermont -->
+          <!-- 33. Dorian Cassiel Evermont -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">DCE</div>
             <div>
@@ -616,7 +670,7 @@
               </p>
             </div>
           </article>
-          <!-- 33. Naomi Celeste Arvantis -->
+          <!-- 34. Naomi Celeste Arvantis -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">NCA</div>
             <div>
@@ -631,7 +685,7 @@
               </p>
             </div>
           </article>
-          <!-- 34. Elias Rowan Montclair -->
+          <!-- 35. Elias Rowan Montclair -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">ERM</div>
             <div>
@@ -646,7 +700,7 @@
               </p>
             </div>
           </article>
-          <!-- 35. Marina Elowen Crestara -->
+          <!-- 36. Marina Elowen Crestara -->
           <article class="attorney-card">
             <div class="attorney-initials" aria-hidden="true">MEC</div>
             <div>
@@ -658,21 +712,6 @@
               </h2>
               <p>
               Marina Elowen Crestara represents individuals and communities facing significant legal challenges affecting fairness, opportunity, and access to justice. Her practice focuses on social impact, legal protections, and issues affecting underserved populations. Marina develops legal strategies addressing barriers to rights and opportunity while advocating for meaningful legal solutions that benefit individuals and communities.
-              </p>
-            </div>
-          </article>
-          <!-- 36. Gabriel Thorne Valecourt -->
-          <article class="attorney-card">
-            <div class="attorney-initials" aria-hidden="true">GTV</div>
-            <div>
-              <p class="role">
-              Civil Litigation and Dispute Resolution
-              </p>
-              <h2>
-              Gabriel Thorne Valecourt
-              </h2>
-              <p>
-              Gabriel Thorne Valecourt specializes in resolving complex disputes involving individuals, organizations, and businesses. His practice focuses on negotiations, mediation, arbitration, and courtroom proceedings. Gabriel evaluates matters thoroughly to identify risks, opportunities, and practical solutions while providing strategic guidance and effective advocacy throughout the legal process.
               </p>
             </div>
           </article>
